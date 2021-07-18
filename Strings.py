@@ -1,0 +1,6 @@
+WALL_TOP_LEFT: str = "╔"  # "┏"
+WALL_TOP_RIGHT: str = "╗"  # "┓"
+WALL_BOTTOM_LEFT: str = "╚"  # "┗"
+WALL_BOTTOM_RIGHT: str = "╝"  # "┛"
+WALL_HORIZONTAL: str = "═"  # "━"
+WALL_VERTICAL: str = "║"  # "┃"
