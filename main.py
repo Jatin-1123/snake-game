@@ -28,14 +28,15 @@ class Snake:
         self.body_set: set = set(self.body)
 
     def input(self, move_input):
-        if move_input == "L":
-            pass
-        elif move_input == "R":
-            pass
-        elif move_input == "D":
-            pass
-        elif move_input == "U":
-            pass
+        match move_input:
+            case "L":
+                pass
+            case "R":
+                pass
+            case "D":
+                pass
+            case "U":
+                pass
 
 
 if __name__ == '__main__':
