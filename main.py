@@ -1,12 +1,12 @@
-from typing import Optional
+from typing import Optional, List
 
 import Strings
 
 
 class Board:
-    def __init__(self, size: int, board: Optional[list] = None) -> None:
+    def __init__(self, size: int, board: Optional[List[List[int]]] = None) -> None:
         self.size: int = size
-        self.board: list = board or [[0 for i in range(size)] for i in range(size)]
+        self.board: List[List[int]] = board or [[0 for i in range(size)] for i in range(size)]
 
     def __str__(self) -> str:
         s = Strings.WALL_TOP_LEFT + (Strings.WALL_HORIZONTAL * self.size) + Strings.WALL_TOP_RIGHT + '\n'
@@ -17,6 +17,25 @@ class Board:
             s += Strings.WALL_VERTICAL + '\n'
         s += Strings.WALL_BOTTOM_LEFT + (Strings.WALL_HORIZONTAL * self.size) + Strings.WALL_BOTTOM_RIGHT
         return s
+
+
+class Snake:
+    def __init__(self, initial_size: int, board: Board) -> None:
+        self.initial_size: int = initial_size
+        self.board: Board = board
+        self.input: str = "L"
+        self.body: List[tuple[int, int]] = []
+        self.body_set: set = set(self.body)
+
+    def input(self, move_input):
+        if move_input == "L":
+            pass
+        elif move_input == "R":
+            pass
+        elif move_input == "D":
+            pass
+        elif move_input == "U":
+            pass
 
 
 if __name__ == '__main__':
